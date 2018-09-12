@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{background-color: #ddd;}
+		img{
+			width:250px;
+			height: 150px;
+			padding:10px 8px 10px 12px;
+			/*使用padding设置图片的白色边框，上右下左*/
+			background-color: #fff;
+			border:1px solid #ddd;
+			position:absolute;
+			
+			/*倾斜*/
+			-webkit-transform:rotate(30deg);
+			-moz-transform:rotate(30deg);
+			transform:rotate(30deg);
+			/*缓慢动画效果*/
+			-webkit-transition:1s;
+			-moz-transition:1s;
+			transition:1s;
+			z-index:0;
+		}
+		h1{
+			text-align: center;
+		}
+		.container{
+			height:500px;
+			width:960px;
+			margin:0 auto;
+			position: relative;
+		}
+		img:hover{
+			/**还原*/
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			transform:rotate(0deg);
+			/*方大*/
+			-webkit-transform:scale(1.2);/*放大倍数*/
+			-moz-transform:scale(1.2);
+			transform:scale(1.2);
+			/*阴影*/
+			box-shadow:10px 10px 15px grey;/*下，右，如果改为复数则阴影的显示方向相反*/
+			z-index:2;
+		}
+		.pic2{
+			top:200px;
+			left:300px;
+			-webkit-transform:rotate(20deg);
+			-moz-transform:rotate(20deg);
+			transform:rotate(20deg);
+		}
+		.pic3{
+			top:150px;
+			left:200px;
+			-webkit-transform:rotate(50deg);
+			-moz-transform:rotate(50deg);
+			transform:rotate(50deg);
+		}
+		.pic4{
+			top:50px;
+			left:400px;
+			-webkit-transform:rotate(10deg);
+			-moz-transform:rotate(10deg);
+			transform:rotate(10deg);
+		}
+		.pic5{
+			top:50px;
+			left:500px;
+			-webkit-transform:rotate(6deg);
+			-moz-transform:rotate(60deg);
+			transform:rotate(60deg);
+		}
+		.pic6{
+			top:50px;
+			left:600px;
+			-webkit-transform:rotate(30deg);
+			-moz-transform:rotate(30deg);
+			transform:rotate(30deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>照片墙</h1>
+		<img class="pic1" src="images/dog.jpg"/>
+		<img  class="pic2" src="images/dog.jpg"/>
+		<img class="pic3" src="images/dog.jpg"/>
+		<img class="pic4" src="images/dog.jpg"/>
+		<img class="pic5" src="images/dog.jpg"/>
+		<img class="pic6" src="images/dog.jpg"/>
+		
+	</div>
+
+	
+</body>
+</html>
